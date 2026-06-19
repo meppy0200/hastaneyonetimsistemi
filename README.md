@@ -8,7 +8,11 @@ Visual Studio 2022 ile açılabilen, .NET 10 Windows Forms tabanlı hastane yön
 2. `HastaneBilgiSistemi.sln` dosyasını Visual Studio ile açın.
 3. Projeyi çalıştırın.
 
+<<<<<<< HEAD
 Uygulama ilk açılışta yerel SQLite veritabanı dosyasını otomatik oluşturur, tabloları kurar ve örnek verileri ekler. SQL Server veya SSMS kurulumu gerekmez.
+=======
+Uygulama ilk açılışta yerel SQLite veritabanı dosyasını otomatik oluşturur, tabloları kurar ve örnek verileri ekler.
+>>>>>>> 30b0c64e51cc9842fa91a6b5e742f13c8171df1e
 
 ## İçerik
 
