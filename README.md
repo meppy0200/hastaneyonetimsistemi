@@ -1,14 +1,14 @@
 ﻿# Hastane Bilgi Sistemi
 
-Visual Studio 2022 ile açılabilen, .NET 10 Windows Forms tabanlı hastane yönetim sistemi.
+Visual Studio 2026 ile açılabilen, .NET 10 Windows Forms tabanlı hastane yönetim sistemi.
 
 ## Hızlı Başlangıç
 
-1. Visual Studio 2022 üzerinde **.NET desktop development** workload'u ve .NET 10 SDK kurulu olmalıdır.
+1. Visual Studio 2026 üzerinde **.NET desktop development** workload'u ve .NET 10 SDK kurulu olmalıdır.
 2. `HastaneBilgiSistemi.sln` dosyasını Visual Studio ile açın.
 3. Projeyi çalıştırın.
 
-Uygulama ilk açılışta yerel SQLite veritabanı dosyasını otomatik oluşturur, tabloları kurar ve örnek verileri ekler. SQL Server veya SSMS kurulumu gerekmez.
+Uygulama ilk açılışta yerel SQLite veritabanı dosyasını otomatik oluşturur, tabloları kurar ve örnek verileri ekler.
 
 ## İçerik
 
