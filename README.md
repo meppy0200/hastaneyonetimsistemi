@@ -1,36 +1,39 @@
 # Hastane Bilgi Sistemi
 
-Visual Studio 2022 ile acilabilen .NET 10 Windows Forms hastane yonetim sistemi.
+Visual Studio 2022 ile açılabilen, .NET 10 Windows Forms tabanlı hastane yönetim sistemi.
 
-## Hizli Baslangic
+## Hızlı Başlangıç
 
-1. Visual Studio 2022'de .NET desktop development workload'u ve .NET 10 SDK kurulu olmalidir.
-2. Visual Studio ile `HastaneBilgiSistemi.sln` dosyasini acin.
-3. Projeyi calistirin.
+1. Visual Studio 2022 üzerinde **.NET desktop development** workload'u ve .NET 10 SDK kurulu olmalıdır.
+2. `HastaneBilgiSistemi.sln` dosyasını Visual Studio ile açın.
+3. Projeyi çalıştırın.
 
-Uygulama ilk acilista yerel SQLite veritabani dosyasini otomatik olusturur, tablolari kurar ve ornek verileri ekler. SQL Server veya SSMS kurulumu gerekmez.
+Uygulama ilk açılışta yerel SQLite veritabanı dosyasını otomatik oluşturur, tabloları kurar ve örnek verileri ekler.
 
-## Icerik
+## İçerik
 
 - 6 ana tablo: `brans`, `doktor`, `hasta`, `randevu`, `recete`, `recete_kalem`
-- PK, FK, UNIQUE ve CHECK constraintler
-- Ayni doktor/tarih/saat icin randevu cakismasini engelleyen unique index
+- Primary Key, Foreign Key, UNIQUE ve CHECK kısıtları
+- Aynı doktor, tarih ve saat için randevu çakışmasını engelleyen unique index
 - View: `vw_BransAylikRandevuSayisi`, `vw_HastaGecmis`
-- Minimum 100 brans, 100 doktor, 100 hasta, 150 randevu, 100 recete, 200 recete kalemi seed verisi
-- CRUD ekranlari ve raporlama sekmeleri
-- 2026 uyumlulugu icin SDK-style `net10.0-windows` proje yapisi ve `Microsoft.Data.Sqlite`
+- Minimum 100 branş, 100 doktor, 100 hasta, 150 randevu, 100 reçete ve 200 reçete kalemi seed verisi
+- CRUD ekranları ve raporlama sekmeleri
+- 2026 uyumluluğu için SDK-style `net10.0-windows` proje yapısı
+- Yerel veritabanı için `Microsoft.Data.Sqlite`
 
-## Yerel Veritabani
+## Yerel Veritabanı
 
-Veriler su dosyada tutulur:
+Veriler şu dosyada tutulur:
 
-`%LOCALAPPDATA%\HastaneBilgiSistemi\hastane.db`
+```txt
+%LOCALAPPDATA%\HastaneBilgiSistemi\hastane.db
+```
 
-Veritabani dosyasini silerseniz uygulama sonraki acilista temiz veritabani ve ornek verileri yeniden olusturur.
+Veritabanı dosyasını silerseniz uygulama sonraki açılışta temiz veritabanını ve örnek verileri yeniden oluşturur.
 
-## Teslim Dosyalari
+## Teslim Dosyaları
 
-- SQL scriptleri: `sql/` klasorunde referans olarak durur; uygulama calismak icin bu scriptlere ihtiyac duymaz.
-- ER diyagrami: `docs/ER_Diagram.md`
-- Teknik dokumantasyon: `docs/Technical_Documentation.md`
-- Uygulama kaynak kodlari: `src/`
+- SQL scriptleri: `sql/` klasöründe referans olarak durur; uygulamanın çalışması için bu scriptlere ihtiyaç yoktur.
+- ER diyagramı: `docs/ER_Diagram.md`
+- Teknik dokümantasyon: `docs/Technical_Documentation.md`
+- Uygulama kaynak kodları: `src/`
